@@ -11,7 +11,7 @@ class handler(BaseHTTPRequestHandler):
         dic = dict(query_string_list)
 
         if "country" or "capital" not in dic:
-            message = "Give me a country or a capital to find."
+            message = "Please enter a valid country or a capital."
 
         if "country" in dic:
             query_country = dic["country"]
